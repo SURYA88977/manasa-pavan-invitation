@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding invitation of Palepu Pavan Kumar and Kesanakurthi Manasa on 24 June 2026.">
+  <title>Pavan Kumar & Manasa | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Noto+Serif+Telugu:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-mark">శ్రీ</div>
+    <div class="loader-ring"></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+
+  <header class="site-header" aria-label="Wedding navigation">
+    <a class="brand" href="#hero" aria-label="Go to top">P & M</a>
+    <nav class="nav-links">
+      <a href="#details">Details</a>
+      <a href="#families">Family</a>
+      <a href="#location">Venue</a>
+    </nav>
+  </header>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Play background music" aria-pressed="false">
+    <span class="music-icon" aria-hidden="true">♪</span>
+    <span class="music-label">Music</span>
+  </button>
+  <audio id="weddingAudio" src="assets/wedding-music.mp3" preload="metadata" loop></audio>
+
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" data-parallax="0.18"></div>
+      <div class="hero-vignette"></div>
+           <div class="hero-content">
+        <p class="eyebrow reveal fade-up">Modern Telugu Wedding Invitation</p>
+        <h1 class="couple-title reveal scale-in" id="hero-title">
+          <span>Palepu Pavan Kumar</span>
+          <em>&</em>
+          <span>Kesanakurthi Manasa</span>
+        </h1>
+        <p class="telugu-line reveal fade-up">పాలెపు పవన్ కుమార్ & కేసనకుర్తి మానస</p>
+        <div class="hero-date reveal fade-up">
+          <span>24 June 2026</span>
+          <span>Wednesday</span>
+          <span>09:43 AM</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#welcome" aria-label="Scroll to welcome section">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section welcome" id="welcome">
+      <div class="section-inner narrow">
+        <p class="section-kicker reveal fade-up">సుస్వాగతం</p>
+        <h2 class="section-title reveal blur-reveal">With Joyful Hearts</h2>
+        <p class="lead reveal fade-up">
+          With the blessings of elders and the grace of the divine, we invite you to join us for a beautiful celebration of love, family, and tradition.
+        </p>
+        <h1 class="telugu-copy reveal fade-up">
+          మా కుటుంబాల ఆనంద వేడుకకు మీ సాన్నిధ్యం, ఆశీర్వాదాలు కోరుకుంటూ సాదరంగా ఆహ్వానిస్తున్నాము.
+        </h1>
+      </div>
+    </section>
+
+    <section class="section couple" id="couple">
+      <div class="section-inner">
+        <p class="section-kicker reveal fade-up">Bride & Groom</p>
+        <h2 class="section-title reveal blur-reveal">Two Hearts, One Promise</h2>
+        <div class="couple-grid">
+          <article class="person-card reveal slide-left">
+            <div class="portrait-frame">
+              <img src="./assets/bava.jpeg" alt="Palepu Pavan Kumar" loading="lazy">
+            </div>
+            <p class="role">Groom</p>
+            <h3>Palepu Pavan Kumar</h3>
+            <p class="telugu-name">పాలెపు పవన్ కుమార్</p>
+          </article>
+          <article class="person-card reveal slide-right">
+            <div class="portrait-frame bride-focus">
+              <img src="./assets/03.JPG.jpeg" alt="Kesanakurthi Manasa" loading="lazy">
+            </div>
+            <p class="role">Bride</p>
+            <h3>Kesanakurthi Manasa</h3>
+            <p class="telugu-name">కేసనకుర్తి మానస</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details" id="details">
+      <canvas class="fireworks" id="fireworksCanvas" aria-hidden="true"></canvas>
+      <div class="section-inner">
+        <p class="section-kicker reveal fade-up">Wedding Details</p>
+        <h2 class="section-title reveal blur-reveal">Save the Date</h2>
+        <div class="detail-grid stagger-group">
+          <article class="detail-card reveal fade-up">
+            <span class="detail-icon">24</span>
+            <h3>Date</h3>
+            <p>24 June 2026</p>
+          </article>
+          <article class="detail-card reveal fade-up">
+            <span class="detail-icon">Wed</span>
+            <h3>Day</h3>
+            <p>Wednesday</p>
+          </article>
+          <article class="detail-card reveal fade-up">
+            <span class="detail-icon">09:43</span>
+            <h3>Muhurtham</h3>
+            <p>09:43 AM</p>
+          </article>
+          <article class="detail-card reveal fade-up">
+            <span class="detail-icon">⌂</span>
+            <h3>Venue</h3>
+            <p>Near Home</p>
+          </article>
+          <article class="detail-card wide reveal fade-up">
+            <span class="detail-icon">⌖</span>
+            <h3>Address</h3>
+            <p>Peddhapudi, Near Ambajipeta</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section families" id="families">
+      <div class="section-inner">
+        <p class="section-kicker reveal fade-up">Our Families</p>
+        <h2 class="section-title reveal blur-reveal">Blessed by Love</h2>
+        <div class="family-grid">
+          <article class="family-card reveal slide-left">
+            <p class="family-label">Bride's Family</p>
+            <h3>Kesanakurthi Family</h3>
+            <p><strong>Father:</strong> Kesanakurthi Palleshwara Rao</p>
+            <p><strong>Mother:</strong> Kesanakurthi Seethamahalakshmi</p>
+          </article>
+          <article class="family-card reveal slide-right">
+            <p class="family-label">Groom's Family</p>
+            <h3>Palepu Family</h3>
+            <p><strong>Father:</strong> Palepu Surya Prakash Rao</p>
+            <p><strong>Mother:</strong> Palepu Nagalakshmi</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown" id="countdown" aria-labelledby="countdown-title">
+      <div class="section-inner narrow">
+        <p class="section-kicker reveal fade-up">Counting Down</p>
+        <h2 class="section-title reveal blur-reveal" id="countdown-title">Until We Celebrate</h2>
+        <div class="countdown-grid reveal scale-in" role="timer" aria-live="polite">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location" id="location">
+      <div class="section-inner">
+        <p class="section-kicker reveal fade-up">Venue</p>
+        <h2 class="section-title reveal blur-reveal">Peddhapudi, Near Ambajipeta</h2>
+        <div class="location-wrap reveal fade-up">
+          <div class="map-shell">
+            <iframe
+              title="Wedding venue map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=16.620659,81.937355&z=15&output=embed">
+            </iframe>
+          </div>
+          <div class="route-card">
+            <div class="route-icon" aria-hidden="true">⌖</div>
+            <h3>Near Home</h3>
+            <p>Peddhapudi, Near Ambajipeta</p>
+            <a class="gold-button" href="https://www.google.com/maps?q=16.620659,81.937355" target="_blank" rel="noopener">Open Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section invitation" id="invitation">
+      <div class="section-inner narrow">
+        <p class="section-kicker reveal fade-up">Invitation</p>
+        <h2 class="section-title reveal blur-reveal">Your Presence Is Our Blessing</h2>
+        <article class="message-card reveal fade-up">
+          <h3> ఆహ్వానం</h3>
+          <p class="telugu-copy">
+             <span class="editable">మీ అందరి</span> ఆశీస్సులతో, మా ప్రియమైన
+            <span class="editable">Palepu Pavan Kumar</span> మరియు <span class="editable">Kesanakurthi Manasa</span>
+            వివాహ మహోత్సవానికి మీరందరూ విచ్చేసి నూతన వధూవరులను ఆశీర్వదించవలసిందిగా
+            మా కుటుంబాల తరఫున సాదరంగా ఆహ్వానిస్తున్నాము.
+          </p>
+        </article>
+        <!-- <article class="message-card reveal fade-up">
+          <h3>English Invitation</h3>
+          <p>
+            With immense joy and gratitude, we invite you and your family to the wedding celebration of
+            <span class="editable">[Groom Name]</span> and <span class="editable">[Bride Name]</span>.
+            Please grace the occasion with your presence and bless the couple as they begin their new journey together.
+          </p>
+        </article> -->
+      </div>
+    </section>
+
+    <section class="section thanks" id="thanks">
+      <div class="section-inner narrow">
+        <p class="section-kicker reveal fade-up">Thank You</p>
+        <h2 class="section-title reveal scale-in">ధన్యవాదాలు</h2>
+        <p class="lead reveal fade-up">
+          Your blessings, love, and presence will make our celebration complete.
+        </p>
+        <p class="final-names reveal fade-up">Pavan Kumar & Manasa</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
